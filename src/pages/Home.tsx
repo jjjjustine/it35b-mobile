@@ -9,13 +9,13 @@ const Home: React.FC = () => {
                 <IonButtons  slot='start'>
                   <IonMenuButton></IonMenuButton>
                 </IonButtons>
-                  <IonTitle>Yoww!!</IonTitle>
+                  <IonTitle>Home</IonTitle>
                           </IonToolbar>
                   </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Yoww!!</IonTitle>
+            <IonTitle size="large">Home</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer />
