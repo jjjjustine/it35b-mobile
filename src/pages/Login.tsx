@@ -1,6 +1,10 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar  } from "@ionic/react";
 
 const Login: React.FC = () => {
+    const navigation =useIonRouter();
+    const doLogin = () => {
+        navigation.push('/app', 'forward', 'replace');
+    }
     return(
         
         <IonPage>
@@ -13,7 +17,9 @@ const Login: React.FC = () => {
         </IonToolbar>
         </IonHeader>
         <IonContent fullscreen>
-        <h1>Login</h1>
+        <IonButtons expand="full" onclick={() => doLogin()}>
+            Login
+        </IonButtons>
         </IonContent>
         </IonPage>
     )
