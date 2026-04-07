@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonHeader, IonMenuButton, IonPage, IonToolbar, useIonRouter  } from "@ionic/react";
+import { IonButton, IonTitle, IonContent, IonMenuButton, IonHeader, IonPage, IonToolbar, useIonRouter  } from "@ionic/react";
 
 const Login: React.FC = () => {
   const navigation = useIonRouter();
@@ -7,18 +7,17 @@ const Login: React.FC = () => {
     }
     return (
         <IonPage>
-            <IonHeader>
-                    <IonToolbar>
-                        <IonButton slot="start">
-                            <IonMenuButton></IonMenuButton>
-                        </IonButton>
+                <IonHeader>
+                        <IonToolbar>
+                            <IonMenuButton slot="start" />
+                            <IonTitle>Login</IonTitle>
                         </IonToolbar>
-            </IonHeader>
-                            <IonContent fullscreen>
-                        <IonButton expand="full" onClick={() => doLogin()}>
-                         Login
-                </IonButton>
-            </IonContent>
+                </IonHeader>
+                            <IonContent fullscreen className="ion-padding">
+                        <IonButton expand="full" onClick={doLogin}>
+                                    Login
+                     </IonButton>
+                    </IonContent>
         </IonPage>
     );
 };
