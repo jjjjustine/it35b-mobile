@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonLoginButton, IonPage, IonTitle, IonToolbar  } from "@ionic/react";
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar  } from "@ionic/react";
 
 const Login: React.FC = () => {
     return(
@@ -7,7 +7,7 @@ const Login: React.FC = () => {
     <IonHeader>
       <IonToolbar>
         <IonButtons slot="start">
-        <IonLoginButton></IonLoginButton>
+        <IonMenuButton></IonMenuButton>
         </IonButtons>
         <IonTitle>Login</IonTitle>
         </IonToolbar>
