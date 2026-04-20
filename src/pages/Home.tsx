@@ -14,6 +14,7 @@ const Home: React.FC = () => {
     {name: 'Search', tab: 'search', url:'/app/home/search', icon:search},
   ];
 
+  
   return (
     <IonReactRouter>
       <IonTabs>
