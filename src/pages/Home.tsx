@@ -16,25 +16,6 @@ const Home: React.FC = () => {
 
   
   return (
-        <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                  <IonButtons  slot='start'>
-                    <IonMenuButton></IonMenuButton>
-                    </IonButtons>
-                            <IonTitle>Home</IonTitle>
-                            </IonToolbar>
-              </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
-      </IonContent>
-    </IonPage>
-    
     <IonReactRouter>
       <IonTabs>
         <IonTabBar slot="bottom">
@@ -62,9 +43,7 @@ const Home: React.FC = () => {
          </IonRouterOutlet>
     </IonTabs>
     </IonReactRouter>
-
   );
 };
-
 
 export default Home;
