@@ -1,6 +1,6 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar  } from "@ionic/react";
 
-const About: React.FC = () => {
+const Search: React.FC = () => {
     return(
         
         <IonPage>
@@ -8,17 +8,16 @@ const About: React.FC = () => {
             <IonToolbar>
                 <IonButtons slot="start">
                     <IonMenuButton></IonMenuButton>
-                         </IonButtons>
-                                <IonTitle>About</IonTitle>
+                                <IonTitle>Template</IonTitle>
+                                </IonButtons>
                         </IonToolbar>
                     </IonHeader>
         
         <IonContent fullscreen>
-                <h1>About</h1>
+                <h1>Search</h1>
                 </IonContent>
         </IonPage>
     )
 }
 
-
-export default About;
+export default Search;
