@@ -38,8 +38,8 @@ import Menu from './pages/Menu';
 setupIonicReact();
 
 const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
+    <IonApp>
+      <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/" component={Login}/>
         <Route path="/app" component={Menu}/>

@@ -3,15 +3,15 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 const Home: React.FC = () => {
   return (
-      <IonPage>
-          <IonHeader>
-              <IonToolbar>
-                <IonButtons  slot='start'>
-                  <IonMenuButton></IonMenuButton>
-                </IonButtons>
-                  <IonTitle>Home</IonTitle>
-                          </IonToolbar>
-                  </IonHeader>
+        <IonPage>
+            <IonHeader>
+                <IonToolbar>
+                  <IonButtons  slot='start'>
+                    <IonMenuButton></IonMenuButton>
+                    </IonButtons>
+                            <IonTitle>Home</IonTitle>
+                            </IonToolbar>
+              </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
@@ -21,6 +21,7 @@ const Home: React.FC = () => {
         <ExploreContainer />
       </IonContent>
     </IonPage>
+    
   );
 };
 

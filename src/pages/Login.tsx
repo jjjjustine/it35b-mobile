@@ -1,11 +1,13 @@
 import { IonButton, IonTitle, IonContent, IonMenuButton, IonHeader, IonPage, IonToolbar, useIonRouter  } from "@ionic/react";
 
 const Login: React.FC = () => {
-  const navigation = useIonRouter();
+    const navigation = useIonRouter();
     const doLogin = () => {
         navigation.push('/app','forward','replace');
     }
+
     return (
+        
         <IonPage>
                 <IonHeader>
                         <IonToolbar>
