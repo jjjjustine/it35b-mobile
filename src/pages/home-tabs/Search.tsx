@@ -2,7 +2,6 @@ import { IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardS
 import { thumbsUpOutline, chatboxOutline, shareOutline } from 'ionicons/icons';
 import { useEffect, useState } from "react";
 
-
 const Feed: React.FC = () => {
     const games = [
         {name: 'Pokemon Yellow'},
@@ -10,6 +9,7 @@ const Feed: React.FC = () => {
         {name: 'The Legend of Zelda'},
         {name: 'Pac-Man'},
         {name: 'Super Mario World'}
+
       ];
     
       const[searchText, setSearchText] = useState("");
@@ -37,20 +37,20 @@ const Feed: React.FC = () => {
                         </IonToolbar>
                     </IonHeader>
         
-        <IonContent className="ios-padding">
-            <IonSearchbar placeholder="Search games" 
-            value={searchText}
-            debounce={0}
-            onIonInput={(e)=> setSearchText(e.detail.value!)}>
+            <IonContent className="ios-padding">
+                    <IonSearchbar placeholder="Search games" 
+                    value={searchText}
+                    debounce={0}
+                    onIonInput={(e)=> setSearchText(e.detail.value!)}>
             </IonSearchbar>
            
-            <IonList>
+                <IonList>
                 {filtered.map((item,index) => (
                 <IonCard key={index}>
-      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
       <IonCardHeader>
         <IonCardTitle>{item.name}</IonCardTitle>
-        <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+        <IonCardSubtitle>Pokemon Go Go</IonCardSubtitle>
       </IonCardHeader>
 
       <IonCardContent>Here's a small text description for the card content. Nothing more, nothing less.</IonCardContent>
