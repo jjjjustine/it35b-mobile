@@ -1,5 +1,5 @@
 import { IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonLabel, IonList, IonMenuButton, IonPage, IonRow, IonSearchbar, IonTitle, IonToolbar  } from "@ionic/react";
-import { thumbsDownOutline, chatboxOutline, shareOutline } from 'ionicons/icons';
+import { thumbsUpOutline, chatboxOutline, shareOutline } from 'ionicons/icons';
 import { useEffect, useState } from "react";
 
 
@@ -59,7 +59,7 @@ const Feed: React.FC = () => {
             <IonRow>
                 <IonCol>
                     <IonButton fill="clear" expand="full">
-                    <IonIcon icon={thumbsDownOutline}></IonIcon>
+                    <IonIcon icon={thumbsUpOutline}></IonIcon>
                     <IonLabel style={{marginlEft: '5px'}}>Like</IonLabel>
                 </IonButton>
                 </IonCol>
